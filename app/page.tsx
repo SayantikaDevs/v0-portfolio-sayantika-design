@@ -8,7 +8,7 @@ import { Inter } from "next/font/google"
 import { PenTool, FileText, ScrollText, Mail, Linkedin, Instagram, Twitter, Facebook, Github } from "lucide-react"
 
 const inter = Inter({ subsets: ["latin"], display: "swap" })
-const ContactForm = dynamic(() => import("@/components/contact-form"), { ssr: false })
+const ContactForm = dynamic(() => import("@/components/contact-form"))
 
 export default function Page() {
   const timeline: TimelineItem[] = [
